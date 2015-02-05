@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="raphael-min.js" type="text/javascript"></script>
+<script src="desktop-clock.js" type="text/javascript"></script>
+<style>
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+table {
+    font-size: 250%;
+}
+
+body {
+    background-image: url("brain.jpeg");
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+#header {
+    color:      Blue;
+    text-align: center;
+    padding:    5px;
+}
+
+#station_south {
+    opacity:    0.75;
+    background: black;
+    color:      yellow;
+    float:      right;
+    padding:    15px;
+    }
+	
+#station_north {
+    opacity:    0.75;
+    background: black;
+    color:      yellow;
+    float:      right;
+    padding:    15px;
+    }
+	
+#clock_container {
+	opacity:    0.75;
+    float:      right;
+    padding:    5px;
+    width:      400px;
+    height:     400px;
+	text-align: center;
+	color:      yellow;
+    }
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    clear:      both;
+    color:      Blue;
+    text-align: center;
+    padding:    5px;
+}
+
+#clock {
+    position: fixed;
+    bottom:   0;
+    right:    0;
+    height:   70px;
+    color:    Blue;
+}
+</style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<div id="header">
+<h1>Pi Clock test page.</h1>
+</div>
+
+<div id='clock_container'>
+<div id="clock_id">
+
+</div>
+<div id='clock_text'>
+<h1>12:00:00</h1>
+</div>
+</div>
+
+<div id="footer">
+<h1>Status:Connected</h1><h1>
+</h1></div>
+
+<div id="station_north">
+Test 2
+</div>
+
+<div id="station_south">
+Test
+</div>
+
+</body></html>
