@@ -10,18 +10,18 @@ function minuteAngle(minute) {
 function drawClock(id,xpos, ypos, radius) {
 
 	var paper = Raphael(id, 2 * radius, 2 * radius);
-	
-	radius -= 5;
-	var xcenter = radius + 5;
-	var ycenter = radius + 5;
+	var STROKE_WIDTH = 5
+	radius -= STROKE_WIDTH;
+	var xcenter = radius + STROKE_WIDTH;
+	var ycenter = radius + STROKE_WIDTH;
 	var outercircle = paper.circle(xcenter, ycenter, radius)
 		.attr({
 			fill: "black",
 			stroke: "yellow"
 		});
-	outercircle.attr("stroke-width", 5);
-	var xnoon = radius + 5;
-	var ynoon = 5;
+	outercircle.attr("stroke-width", STROKE_WIDTH);
+	var xnoon = radius + STROKE_WIDTH;
+	var ynoon = STROKE_WIDTH;
 
 	var bigbaton_width = 15;	// pixels
 	var bigbaton_height = 15;	// percent of r
